@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0a0e1a" />
+  <title>PS4 Smart Controller Startup</title>
+  <link rel="icon" type="image/svg+xml" href="assets/images/controller.svg" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body>
+  <div id="boot-overlay" class="boot-overlay" aria-hidden="true">
+    <div class="boot-logo">PS4</div>
+    <div class="boot-bar"><span></span></div>
+  </div>
+
+  <main class="screen" role="main">
+    <header class="topbar">
+      <div class="brand">
+        <img src="assets/images/controller.svg" alt="" class="brand-icon" />
+        <h1 class="title">PS4 SMART CONTROLLER STARTUP</h1>
+      </div>
+      <div class="clock" id="clock">--:--</div>
+    </header>
+
+    <section class="status-area">
+      <p class="status-line" id="status-line">Verificando controles conectados...</p>
+      <p class="status-sub" id="status-sub">Aguarde enquanto o navegador consulta os dispositivos.</p>
+    </section>
+
+    <section class="cards" id="cards" aria-live="polite"></section>
+
+    <section class="empty-state" id="empty-state" hidden>
+      <h2 class="empty-title">CONTROLE USB CONECTADO?</h2>
+      <p class="empty-text">Pressione o botão PS do controle para ligá-lo e continuar.</p>
+      <p class="empty-hint" id="empty-hint"></p>
+    </section>
+
+    <section class="notice" id="notice" hidden></section>
+
+    <footer class="actions">
+      <button id="btn-retry" class="btn btn-secondary" type="button">TENTAR NOVAMENTE</button>
+      <button id="btn-continue" class="btn btn-primary" type="button" disabled>CONTINUAR</button>
+    </footer>
+
+    <p class="legend" id="legend">
+      Navegação: direcional para mover, <strong>X</strong> para selecionar, <strong>O</strong> para voltar.
+    </p>
+  </main>
+
+  <script src="assets/js/controller.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
