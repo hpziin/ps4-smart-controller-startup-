@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" role="img" aria-label="Controle">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#00c2ff"/>
+      <stop offset="1" stop-color="#0070d1"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#g)" d="M64 22c-18 0-24 5-38 9-9 3-14 10-16 20l-4 22c-2 12 3 21 12 23 7 2 12-2 17-9l8-12c3-4 7-6 12-6h18c5 0 9 2 12 6l8 12c5 7 10 11 17 9 9-2 14-11 12-23l-4-22c-2-10-7-17-16-20-14-4-20-9-38-9z"/>
+  <circle cx="42" cy="60" r="7" fill="#041018"/>
+  <circle cx="86" cy="52" r="5" fill="#041018"/>
+  <circle cx="100" cy="62" r="5" fill="#041018"/>
+  <circle cx="86" cy="72" r="5" fill="#041018"/>
+  <circle cx="72" cy="62" r="5" fill="#041018"/>
+</svg>
